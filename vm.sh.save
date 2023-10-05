@@ -1,0 +1,21 @@
+#/bin/bash
+
+echo "Setting up Nix OS Virtual Machine from DigiDevon"
+echo "Making VM directory at /vm"
+sudo mkdir /vm
+echo "Copying configuration file to VM directory"
+sudo cp -r configuration.nix /vm
+echo "Copying vm.sh to /vm directory"
+sudo cp -r vm.sh /vm
+echo "Installing Configurations to system"
+sudo nixos-rebuild switch -I nixos-config=/vm/configuration.nix
+echo "Running Garbage Collection"
+# sudo nix-collect-garbage -d
+echo "Installing flatpak repo is not already installed"
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+echo "Creating autostart dir for win98 user"
+sudo mkdir /home/win98/.config/autostart
+echo "Copying Startup script for Win98"
+## code here
+echo "A restart is required to continue setup"
+sudo reboot 

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Setup
+Exec=/vm/startup-win98.sh
