@@ -11,5 +11,5 @@ I will be working on the install.sh code to make the installer build the win98 a
 ![image](https://github.com/GeekCafe-XYZ/nixos-86box/assets/61923195/55885641-c163-4ea7-8beb-b14638a2c357)
 
 ### Testing On
-Gnome Boxes
-Acer Aspire E1 Z5WE3
+- Gnome Boxes
+- Acer Aspire E1 Z5WE3
