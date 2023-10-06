@@ -11,9 +11,12 @@
     ];
 
   # Enable the XFCE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
-  services.xserver.displayManager.autoLogin.user = "win98";
+  services.xserver.displayManager = {
+    lightdm.enable = true;
+    xfce.enable = true;
+    autoLogin.user = "win98";
+  };
+  
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.win98 = {
     isNormalUser = true;
@@ -28,17 +31,19 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Flatpak support
+  # System Software
   environment.systemPackages = [
-    pkgs.flatpak
-    pkgs.git
-    pkgs.xarchiver
+    pkgs.flatpak # Flatpak support
+    pkgs.git # Allow user to download packages
+    pkgs.xarchiver # Allow user to unzip zips/7zip
   ];
 
   services.flatpak.enable = true;
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-kde ];
+    extraPortals = [ 
+      pkgs.xdg-desktop-portal-kde 
+    ];
   };
 }
