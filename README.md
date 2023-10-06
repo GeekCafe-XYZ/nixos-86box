@@ -1,4 +1,4 @@
-# nixos-86box
+# NixOS-86box
 A nixos installation for computers to auto boot into windows 9x systems with the help of 86box.
 
 | I created this install script for anyone who want's to take an old pc and turn it into AN EVEN OLDER PC. 
