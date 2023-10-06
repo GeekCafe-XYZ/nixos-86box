@@ -4,23 +4,7 @@ A nixos installation for computers to auto boot into windows 9x systems with the
 | I created this install script for anyone who want's to take an old pc and turn it into AN EVEN OLDER PC. 
 
 ## How to install
-https://github.com/GeekCafe-XYZ/nixos-86box/wiki/Installation-Guide#extremely-details-guide
-```
-nix-shell -p git
-```
-7. Type in 
-```
-git clone https://github.com/GeekCafe-XYZ/nixos-86box/
-```
-8. Type
-```
-cd nixos-86box
-```
-9. Type
-```
-./install.sh
-```
-Your System will reboot and auto log into win98 account
+[Detailed Guide](https://github.com/GeekCafe-XYZ/nixos-86box/wiki/Installation-Guide#extremely-details-guide)
 
 I will be working on the install.sh code to make the installer build the win98 account. This will come out soon so please stand by.
 
