@@ -25,3 +25,6 @@ cd nixos-86box
 ```
 ./install.sh
 ```
+Your System will reboot and auto log into win98 account
+
+I will be working on the install.sh code to make the installer build the win98 account. This will come out soon so please stand by.
