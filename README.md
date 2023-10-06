@@ -17,3 +17,11 @@ nix-shell -p git
 ```
 git clone https://github.com/GeekCafe-XYZ/nixos-86box/
 ```
+8. Type
+```
+cd nixos-86box
+```
+9. Type
+```
+./install.sh
+```
