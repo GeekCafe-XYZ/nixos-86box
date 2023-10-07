@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/configuration.nix
+      <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix> #NixOS ISO code
+      <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix> # Provide an initial copy of the NixOS channel so that the user doesn't need to run "nix-channel --update" first.
     ];
 
   # Enable the XFCE Desktop Environment.
@@ -17,7 +19,6 @@
     autoLogin.user = "win98";
   };
   
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.win98 = {
     isNormalUser = true;
     description = "win98";
